@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Press+Start+2P');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.clock {
+    border: 10px double black;
+    border-radius: 20px;
+    background-color: #9A9A9A;
+}
+
+.digits, .title {
+    margin: 20px;
+    font-family: 'Press Start 2P', cursive;
+    text-shadow: 0 0 10px #FF0000;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.title {
+    text-shadow: none;
+}
+
+.colon {
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0%   { opacity: 0; }
+    25%  { opacity: 1; }
+    50%  { opacity: 0; }
+    75%  { opacity: 1; }
+    100% { opacity: 0; }
+}
+

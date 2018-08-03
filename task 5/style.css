@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.square {
+    height: 15rem;
+    width: 15rem;
+    background-color: gray;
+    border: 10px solid lightblue;
+    border-radius: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 2rem;
+    display: none;
+    text-align: center;
+}
+

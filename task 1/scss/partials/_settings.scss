@@ -1,0 +1,28 @@
+@import "../modules/variables";
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 18px;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333;
+  background-color: $pastel-grey;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.wrapper {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 5vw repeat(10, 1fr) 5vw;
+  grid-template-rows: 5rem minmax(500px, auto) minmax(500px, auto) 4rem;
+  @media#{$tablet-up} {
+    grid-template-rows: 5rem minmax(500px, auto) 4rem;
+  }
+}

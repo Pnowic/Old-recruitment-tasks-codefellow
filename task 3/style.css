@@ -1,0 +1,132 @@
+/*Font*/
+
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('./fonts/StarJedi.eot');
+    src: local('Star Jedi'), local('StarJedi'),
+    url('./fonts/StarJedi.eot?#iefix') format('embedded-opentype'),
+    url('./fonts/StarJedi.woff2') format('woff2'),
+    url('./fonts/StarJedi.woff') format('woff'),
+    url('./fonts/StarJedi.ttf') format('truetype'),
+    url('./fonts/StarJedi.svg#StarJedi') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*General*/
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    font-family: 'Star Jedi', sans-serif;
+    letter-spacing: 0.1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-family: 'Star Jedi', sans-serif;
+    letter-spacing: 0.3em;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    background-color: #bcb5c2;
+}
+
+.start-button {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    font-size: 1.5em;
+    transition: all 0.4s;
+}
+
+.start-button:hover {
+    color: #fada5e;
+    background-color: #928d97;
+}
+
+.inactive {
+    display: none;
+}
+
+.active {
+    display: inline-block;
+}
+
+.active-flex {
+   display: flex;
+}
+
+/*Tabs*/
+
+/*for narrower than 780 px*/
+@media screen and (max-width: 780px){
+    .tabs-container {
+        flex-direction: column;
+        font-size: 0.5em;
+    }
+    .tabs-container button {
+        width: 100%;
+    }
+    .close {
+        flex-grow: 1;
+        order: -1;
+    }
+}
+
+.tabs-container {
+    overflow: hidden;
+    border: 1px solid #dad2e2;
+    width: 50%;
+    background-color: #f7eeff;
+}
+
+
+.tabs-container button.current {
+    background-color: #928d97;
+    color: #fada5e;
+}
+
+.tab {
+    text-align: center;
+    width: 30%;
+    font-size: 1em;
+    transition: all 0.4s;
+}
+
+.tab:hover {
+    background-color: #dad2e2;
+}
+
+.close {
+    color: red;
+    border: none;
+    outline: none;
+    width: 10%;
+    font-size: 1.5em;
+}
+
+.close:hover {
+    background-color: #aba4b0;
+}
+
+/*Tab content*/
+
+.tab-content-container {
+    border-width: 0 1px 1px 1px;
+    border-style: solid;
+    border-color: #dad2e2;
+    width: 50%;
+    background-color: #dad2e2;
+}
+
+.tab-content {
+    text-align: center;
+    margin: 0 10%;
+}
